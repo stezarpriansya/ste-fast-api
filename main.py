@@ -12,8 +12,8 @@ def read_root():
 
 @app.get("/data")
 def read_root():
-    data = pd.read_csv('addresses.csv')
-    data = data.to_list()
+    data = pd.read_csv('cities.csv')
+    data = data.values.tolist()()
     return {"datas": data}
 
 
