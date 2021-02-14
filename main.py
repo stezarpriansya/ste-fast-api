@@ -13,7 +13,7 @@ def read_root():
 @app.get("/data")
 def read_root():
     data = pd.read_csv('cities.csv')
-    data = data.values.tolist()()
+    data = data.values.tolist()
     return {"datas": data}
 
 
